@@ -1,0 +1,14 @@
+aside {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #eeeeee; }
+
+body {
+  font-family: sans-serif; }
+
+main {
+  width: 100%;
+  margin-left: 200px; }
