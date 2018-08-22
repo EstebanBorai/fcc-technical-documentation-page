@@ -4,7 +4,7 @@
   "description": "freeCodeCamp's Technical Documentation Page Project - Part of the \"Responsive Web Design Certification\"",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp --watch",
+    "start": "gulp watch",
     "dist": "gulp"
   },
   "repository": {

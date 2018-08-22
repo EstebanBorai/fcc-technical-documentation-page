@@ -1,0 +1,17 @@
+#tools {
+  position: fixed;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  li {
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
