@@ -1,0 +1,19 @@
+footer {
+  margin-left: 200px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  background: #111111;
+  color: #eeeeee;
+
+  a {
+    color: #ff7f50;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 750px) {
+  footer {
+    margin-left: 0;
+  }
+}

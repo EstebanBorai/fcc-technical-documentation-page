@@ -3,6 +3,9 @@ function setTheme(palette, name) {
   $('body').css('color', palette.text);
   $('aside').css('background', palette.aside);
   $('body').css('transition', '0.3s');
+  $('#tools').css('color', '#000000');
+  $('code').css('background', '#ffffff');
+  $('.prettyprint').css('background', '#ffffff');
 
   window.APP_SETTINGS.theme = name;
 }

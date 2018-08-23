@@ -1,0 +1,25 @@
+.styled-table {
+  * {
+    box-sizing: border-box;
+  }
+
+  thead {
+    tr {
+      th {
+        padding-left: 0.3rem;
+        text-align: left;
+      }
+    }
+  }
+
+  tbody {
+    tr:nth-of-type(odd) {
+      background-color:#cccccc;
+    }
+
+    td {
+      padding-left: 0.3rem;
+      text-align: left;
+    }
+  }
+}

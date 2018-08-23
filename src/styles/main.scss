@@ -9,9 +9,25 @@ body {
   margin-left: 200px;
   padding: 0;
 
+  .prettyprint {
+    padding: 0.5rem !important;
+    margin: 0 !important;
+    border-radius: 4px !important;
+    overflow-x: auto;
+  }
+
   .main-section {
     padding: 0.5rem;
     box-sizing: border-box;
+
+    .note {
+      background: hsla(55, 100%, 50%, 0.5);
+      border-left: 3px solid hsla(55, 100%, 50%, 1);
+      padding: 0.5rem;
+      box-sizing: border-box;
+      width: auto;
+      display: inline-block;
+    }
   }
 }
 

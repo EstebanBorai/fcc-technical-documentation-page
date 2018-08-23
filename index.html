@@ -21,7 +21,9 @@
         <a href="#introduction">
           <li>Introduction</li>
         </a>
-        <li>Statements</li>
+        <a href="#statements">
+          <li>Statements</li>
+        </a>
         <li>Syntax</li>
         <li>Comments</li>
         <li>Vaiables</li>
@@ -95,8 +97,145 @@
         </li>
       </ul>
     </section>
+    <section class="main-section" id="statements">
+      <header>
+        <h2>Statements</h2>
+      </header>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var x, y, z;    // Statement 1
+  x = 5;          // Statement 2
+  y = 6;          // Statement 3
+  z = x + y;      // Statement 4
+        </code>
+      </pre>
+      <h3>JavaScript Programs</h3>
+      <p>
+        A computer program is a list of "instructions" to be "executed" by a computer.
+        In a programming language, these programming instructions are called statements.
+        A JavaScript program is a list of programming statements.
+      </p>
+      <p class="note">
+        In HTML, JavaScript programs are executed by the web browser.
+      </p>
+      <h3>JavaScript Statements</h3>
+      <p>
+        JavaScript statements are composed of:
+        Values, Operators, Expressions, Keywords, and Comments.
+        This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  document.getElementById("demo").innerHTML = "Hello Dolly.";
+        </code>
+      </pre>
+      <h3>Semicolons</h3>
+      <p>
+        Semicolons separate JavaScript statements.
+        Add a semicolon at the end of each executable statement:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var a, b, c;     // Declare 3 variables
+  a = 5;           // Assign the value 5 to a
+  b = 6;           // Assign the value 6 to b
+  c = a + b;       // Assign the sum of a and b to c
+        </code>
+      </pre>
+      <p>
+        When separated by semicolons, multiple statements on one line are allowed:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  a = 5; b = 6; c = a + b;
+        </code>
+      </pre>
+      <p class="note">
+        On the web, you might see examples without semicolons. 
+        Ending statements with semicolon is not required, but highly recommended.
+      </p>
+      <h3>JavaScript White Space</h3>
+      <p>
+        JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+        The following lines are equivalent:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var person = "Hege";
+  var person="Hege";
+        </code>
+      </pre>
+      <p>
+        A good practice is to put spaces around operators ( = + - * / ):
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var x = y + z;
+        </code>
+      </pre>
+      <h3>JavaScript Line Length and Line Breaks</h3>
+      <p>
+        For best readability, programmers often like to avoid code lines longer than 80 characters.
+        If a JavaScript statement does not fit on one line, the best place to break it, is after an operator:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  document.getElementById("demo").innerHTML =
+  "Hello Dolly!";
+        </code>
+      </pre>
+      <h3>JavaScript Code Blocks</h3>
+      <p>
+        JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
+        The purpose of code blocks is to define statements to be executed together.         
+        One place you will find statements grouped together in blocks, is in JavaScript functions:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  function myFunction() {
+    document.getElementById("demo1").innerHTML = "Hello Dolly!";
+    document.getElementById("demo2").innerHTML = "How are you?";
+  }
+        </code>
+      </pre>
+      <h3>JavaScript Keywords</h3>
+      <p>
+        JavaScript statements often start with a keyword to identify the JavaScript action to be performed.
+      </p>
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Keyword</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>break</td>
+            <td>Terminates a switch or a loop</td>
+          </tr>
+          <tr>
+            <td>continue</td>
+            <td>Jumps out of a loop and starts at the top</td>
+          </tr>
+          <tr>
+            <td>debugger</td>
+            <td>Stops the execution of JavaScript, and calls (if available) the debugging function</td>
+          </tr>
+          <tr>
+            <td>do ...while</td>
+            <td>Executes a block of statements, and repeats the block, while a condition is true</td>
+          </tr>   
+        </tbody>
+      </table>
+    </section>
   </main>
+  <footer>
+    The content present in this site belongs to <a href="https://www.w3schools.com">w3schools.com</a>
+    and <a href="https://developer.mozilla.org/">MDN</a>.
+  </footer>
   <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
