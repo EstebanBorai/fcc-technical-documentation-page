@@ -13,50 +13,36 @@
 <body>
   <aside>
     <img id="javascript-logo" src="https://raw.githubusercontent.com/estebanborai/fcc-technical-documentation-page/master/assets/javascript-logo.png" />
-    <form id="search-filter">
-      <input type="text" name="filter" />
-    </form>
-    <nav>
-      <ul id="navbar">
-        <a href="#introduction">
-          <li>Introduction</li>
+    <nav id="navbar">
+      <header>
+        JavaScript Docs
+      </header>
+      <ul>
+        <a href="#Introduction" class="nav-link">
+          <li>
+            Introduction
+          </li>
         </a>
-        <a href="#statements">
-          <li>Statements</li>
+        <a href="#Statements" class="nav-link">
+          <li>
+            Statements
+          </li>
         </a>
-        <li>Syntax</li>
-        <li>Comments</li>
-        <li>Vaiables</li>
-        <li>Operators</li>
-        <li>Arithmetic</li>
-        <li>Assignment</li>
-        <li>Data Types</li>
-        <li>Functions</li>
-        <li>Objects</li>
-        <li>Events</li>
-        <li>Strings</li>
-        <li>Numbers</li>
-        <li>Arrays</li>
-        <li>Dates</li>
-        <li>Math</li>
-        <li>Booleans</li>
-        <li>Comparisons</li>
-        <li>Conditions</li>
-        <li>Switch</li>
-        <li>Loops</li>
-        <li>Type Conversion</li>
-        <li>Bitwise</li>
-        <li>RegExp</li>
-        <li>Errors</li>
-        <li>Scope</li>
-        <li>Hoisting</li>
-        <li>Strict Mode</li>
-        <li>Keyword <code>this</code></li>
-        <li>Keyword <code>let</code></li>
-        <li>Keyword <code>const</code></li>
-        <li>Debugging</li>
-        <li>Style Guide</li>
-        <li>JSON</li>
+        <a href="#Variables" class="nav-link">
+          <li>
+            Variables
+          </li>
+        </a>
+        <a href="#Contribute" class="nav-link">
+          <li>
+            Contribute
+          </li>
+        </a>
+        <a href="#Learn_more" class="nav-link">
+          <li>
+            Learn more
+          </li>
+        </a>
       </ul>
     </nav>
   </aside>
@@ -65,9 +51,9 @@
     <li id="font-settings"><i class="fas fa-font"></i></li>
   </ul>
   <main id="main-doc">
-    <section class="main-section" id="introduction">
+    <section class="main-section" id="Introduction">
       <header>
-        <h1>Introduction</h1>
+      Introduction
       </header>
       <p>
         JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive 
@@ -97,9 +83,9 @@
         </li>
       </ul>
     </section>
-    <section class="main-section" id="statements">
+    <section class="main-section" id="Statements">
       <header>
-        <h2>Statements</h2>
+        Statements
       </header>
       <pre class="prettyprint">
         <code class="language-js">
@@ -211,30 +197,342 @@
         </thead>
         <tbody>
           <tr>
-            <td>break</td>
+            <td class="code-text">break</td>
             <td>Terminates a switch or a loop</td>
           </tr>
           <tr>
-            <td>continue</td>
+            <td class="code-text">continue</td>
             <td>Jumps out of a loop and starts at the top</td>
           </tr>
           <tr>
-            <td>debugger</td>
+            <td class="code-text">debugger</td>
             <td>Stops the execution of JavaScript, and calls (if available) the debugging function</td>
           </tr>
           <tr>
-            <td>do ...while</td>
+            <td class="code-text">do ...while</td>
             <td>Executes a block of statements, and repeats the block, while a condition is true</td>
+          </tr>
+          <tr>
+            <td class="code-text">for</td>
+            <td>Marks a block of statements to be executed, as long as a condition is true</td>
+          </tr>
+          <tr>
+            <td class="code-text">function</td>
+            <td>Declares a function</td>
+          </tr>
+          <tr>
+            <td class="code-text">if ...else</td>
+            <td>Marks a block of statements to be executed, depending on a condition</td>
+          </tr>
+          <tr>
+            <td class="code-text">return</td>
+            <td>Exits a function</td>
           </tr>   
+          <tr>
+            <td class="code-text">switch</td>
+            <td>Marks a block of statements to be executed, depending on different cases</td>
+          </tr>
+          <tr>
+            <td class="code-text">try ...catch</td>
+            <td>Implements error handling to a block of statements</td>
+          </tr>
+          <tr>
+            <td class="code-text">var</td>
+            <td>Declares a variable</td>
+          </tr>
         </tbody>
       </table>
+    </section>
+    <section class="main-section" id="Variables">
+      <header>
+        Variables
+      </header>
+      <p>
+        JavaScript variables are containers for storing data values.
+        In this example, x, y, and z, are variables:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var x = 5;
+  var y = 6;
+  var z = x + y;
+        </code>
+      </pre>
+      <p>
+        From the example above, you can expect:          
+      </p>
+      <ul>
+        <li>x stores the value 5</li>
+        <li>y stores the value 6</li>
+        <li>z stores the value 11</li>
+      </ul>
+      <h3>Much Like Algebra</h3>
+      <p>
+        In this example, price1, price2, and total, are variables:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var price1 = 5;
+  var price2 = 6;
+  var total = price1 + price2;
+        </code>
+      </pre>
+      <p>
+        In programming, just like in algebra, we use variables (like price1) to hold values.
+        In programming, just like in algebra, we use variables in expressions (total = price1 + price2).
+        From the example above, you can calculate the total to be 11.
+      </p>
+      <p class="note">
+        JavaScript variables are containers for storing data values.
+      </p>
+      <h3>JavaScript Identifiers</h3>
+      <p>
+        All JavaScript variables must be identified with unique names.
+        These unique names are called identifiers.
+        Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+        The general rules for constructing names for variables (unique identifiers) are:
+      </p>
+      <ul>
+        <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+        <li>Names must begin with a letter</li>
+        <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+        <li>Names are case sensitive (y and Y are different variables)</li>
+        <li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+      </ul>
+      <p class="note">
+        JavaScript identifiers are case-sensitive.
+      </p>
+      <h3>The Assigment Operator</h3>
+      <p>
+        In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.
+        This is different from algebra. The following does not make sense in algebra:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  x = x + 5
+        </code>
+      </pre>
+      <p>
+        In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to x.
+        (It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)
+      </p>
+      <p class="note">
+        The "equal to" operator is written like == in JavaScript.
+      </p>
+      <h3>JavaScript Data Types</h3>
+      <p>
+        JavaScript variables can hold numbers like 100 and text values like "John Doe".
+        In programming, text values are called text strings.
+        JavaScript can handle many types of data, but for now, just think of numbers and strings.
+        Strings are written inside double or single quotes. Numbers are written without quotes.
+        If you put a number in quotes, it will be treated as a text string.
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var pi = 3.14;
+  var person = "John Doe";
+  var answer = 'Yes I am!';
+        </code>
+      </pre>
+      <h3>Declaring (Creating) JavaScript Variables</h3>
+      <p>
+        Creating a variable in JavaScript is called "declaring" a variable.
+        You declare a JavaScript variable with the var keyword:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var carName;
+        </code>
+      </pre>
+      <p>
+        After the declaration, the variable has no value. (Technically it has the value of undefined)
+        To assign a value to the variable, use the equal sign:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  carName = "Volvo";
+        </code>
+      </pre>
+      <p>
+        You can also assign a value to the variable when you declare it:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var carName = "Volvo";
+        </code>
+      </pre>
+      <p>
+        In the example below, we create a variable called carName and assign the value "Volvo" to it.
+        Then we "output" the value inside an HTML paragraph with id="demo":
+      </p>
+      <pre class="prettyprint lang-html">
+        <code>
+  &lt;p id="demo">&lt;/p&gt;
+  &lt;script&gt;
+    var carName = "Volvo";
+    document.getElementById("demo").innerHTML = carName; 
+  &lt;/script&gt;
+        </code>
+      </pre>
+      <p class="note">
+        It's a good programming practice to declare all variables at the beginning of a script.
+      </p>
+      <h3>One Statement, Many Variables</h3>
+      <p>
+        You can declare many variables in one statement.
+        Start the statement with var and separate the variables by comma:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var person = "John Doe", carName = "Volvo", price = 200;
+        </code>
+      </pre>
+      <p>
+        A declaration can span multiple lines:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var person = "John Doe", carName = "Volvo", price = 200;
+        </code>
+      </pre>
+      <p>
+        A declaration can span multiple lines:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var person = "John Doe",
+  carName = "Volvo",
+  price = 200;
+        </code>
+      </pre>
+      <h3>Value = undefined</h3>
+      <p>
+        In computer programs, variables are often declared without a value. 
+        The value can be something that has to be calculated, or something that will be provided later, 
+        like user input.
+        A variable declared without a value will have the value undefined.
+        The variable carName will have the value undefined after the execution of this statement:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var carName;
+        </code>
+      </pre>
+      <h3>Re-Declaring JavaScript Variables</h3>
+      <p>
+        If you re-declare a JavaScript variable, it will not lose its value.
+        The variable carName will still have the value "Volvo" after the execution of these statements:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var carName = "Volvo";
+  var carName;
+        </code>
+      </pre>
+      <h3>JavaScript Arithmetic</h3>
+      <p>
+        As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var x = 5 + 2 + 3;
+        </code>
+      </pre>
+      <p>
+        You can also add strings, but strings will be concatenated:
+      </p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var x = "John" + " " + "Doe";
+        </code>
+      </pre>
+      <p>Also try this:</p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var x = "5" + 2 + 3;
+        </code>
+      </pre>
+      <p class="note">
+        If you put a number in quotes, the rest of the numbers will 
+        be treated as strings, and concatenated.
+      </p>
+      <p>Now try this:</p>
+      <pre class="prettyprint">
+        <code class="language-js">
+  var x = 2 + 3 + "5";
+        </code>
+      </pre>
+    </section>
+    <section class="main-section" id="Contribute">
+      <header>
+        Contribute
+      </header>
+      <h3>Benefits of Contribution</h3>
+      <p>
+        Making continuous contributions helps you..
+      </p>
+      <ul>
+        <li>Enhance your skills</li>
+        <li>Learn new technologies</li>
+        <li>Meet other developers</li>
+        <li>Keep on writting code</li>
+        <li>Stay up to date</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Learn_more">
+      <header>
+        Learn more
+      </header>
+      <p>
+        Keep on learning, practicing and doing! Opean a GitHub account,
+        learn how to use Git, master your favorite language, contribute to 
+        open-source, create amazing things!
+        <br />
+        Here I will let some sources for you to kickstart!
+      </p>
+      <h3>FreeCodeCamp</h3>
+      <p>
+        freeCodeCamp (also referred to as “Free Code Camp”) is a non-profit organization
+        that consists of an interactive learning web platform, an online community forum, 
+        chat rooms, Medium publications and local organizations that intend to make learning 
+        web development accessible to anyone. Beginning with tutorials that introduce students 
+        to HTML, CSS and JavaScript, students progress to project assignments that they must 
+        complete either alone or in pairs. Upon completion of all project tasks, students are 
+        partnered with other nonprofits to build web applications, giving the students practical 
+        development experience. 
+        <a href="https://en.wikipedia.org/wiki/FreeCodeCamp" target="_blank" rel="noopener">Read more</a>.
+        <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">Visit FreeCodeCamp</a>.
+      </p>
+      <h3>Mozilla Developer Foundation (MDN)</h3>
+      <p>
+          MDN Web Docs, previously Mozilla Developer Network and formerly Mozilla Developer Center, 
+          is the official Mozilla website for development documentation of web standards and Mozilla 
+          projects.
+        <a href="https://en.wikipedia.org/wiki/MDN_Web_Docs" target="_blank" rel="noopener">Read more</a>.
+        <a href="https://developer.mozilla.org" target="_blank" rel="noopener">Visit MDN</a>.
+      </p>
+      <h3>w3schools</h3>
+      <p>
+        W3Schools is a famous web site for learning web technologies online. Content includes tutorials and 
+        references relating to HTML, CSS, JavaScript, JSON, PHP, Python, AngularJS, SQL, Bootstrap, Node.js, 
+        jQuery, XQuery, AJAX, and XML.
+        Created in 1998, its name is derived from the World Wide Web, but is not affiliated with the W3C 
+        (World Wide Web Consortium). It is run by Refsnes Data in Norway. W3Schools presents thousands 
+        of code examples. By using the TryIt editor, readers can edit examples and execute the code in a sandbox.
+        <a href="https://en.wikipedia.org/wiki/W3Schools" target="_blank" rel="noopener">Read more</a>.
+        <a href="https://www.w3schools.com/default.asp" target="_blank" rel="noopener">Visit MDN</a>.
+      </p>
+      <p class="note">
+        Most of the information shown here is taken from <strong>w3shools</strong>.
+        Consider visiting the official website.
+      </p>
     </section>
   </main>
   <footer>
     The content present in this site belongs to <a href="https://www.w3schools.com">w3schools.com</a>
     and <a href="https://developer.mozilla.org/">MDN</a>.
   </footer>
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
