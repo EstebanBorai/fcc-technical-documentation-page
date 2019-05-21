@@ -1,5 +1,5 @@
 <a href="https://www.freecodecamp.org/">
-  <img align="left" width="100" height="100" alt="freeCodeCamp Logo" src="https://raw.githubusercontent.com/gitpullsh/fcc-technical-documentation-page/master/assets/freecodecamp_logo.gif" />
+  <img align="left" width="100" height="100" alt="freeCodeCamp Logo" src="https://raw.githubusercontent.com/estebanborai/fcc-technical-documentation-page/master/assets/freecodecamp_logo.gif" />
 </a>
 
 # fcc-technical-documentation-page
@@ -8,7 +8,7 @@
 ### Development
 To run this project locally in your machine, you will need to run the following commands from your terminal/console application.
 ```
-git clone https://github.com/gitpullsh/fcc-technical-documentation-page.git
+git clone https://github.com/estebanborai/fcc-technical-documentation-page.git
 cd fcc-technical-documentation-page
 npm i && npm start
 ```
